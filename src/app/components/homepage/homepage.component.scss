@@ -1,0 +1,358 @@
+.h-container{
+  width: 100%;
+  height: 80%;
+  background-color: adjust-hue(black, $degrees: 45);
+  background:fixed;
+  background-blend-mode: screen;
+  animation:scale 5s linear infinite;
+  transition:all;
+  border-bottom: 30px solid  #230578;
+  background: linear-gradient(#232323, #2667, #5677);
+  animation: fade linear 5s infinite;
+  transition: all;
+}
+
+// animating background
+
+@keyframes fade {
+  from{
+    background: linear-gradient(#232323, #2667, #5677);
+  }
+  to{
+    background: linear-gradient(#232323, #2667, rgba(228, 229, 231, 0.467));
+  }
+}
+// animating background
+
+@keyframes scale{
+
+}
+// copied fro w3schools
+.triangle-right {
+  position: absolute;
+  top:15%;
+  left:62%;
+	width: 0;
+	height: 0;
+	border-top: 250px solid transparent;
+	border-right: 500px solid rgb(17, 17, 17);
+  border-bottom: 250px solid transparent;
+  box-sizing: content-box;
+}
+
+// styling my image
+
+.my-img{
+  width:100%;
+  height: 100%;
+  border-radius: 50%;
+  animation:dropimg 0.5s linear;
+  animation-delay: 1s;
+}
+// animating my image
+@keyframes dropimg{
+  from{top:-20%}
+  to{top:36%}
+}
+
+.circle{
+  position: absolute;
+  opacity:1;
+  top:36%;
+  left:55%;
+  height:25rem;
+  width:30%;
+  border-radius: 50%;
+  background-color: black;
+  border-bottom: 8px solid #230578;
+  animation:drop 1s linear;
+  animation-timing-function: ease-in;
+}
+// animating my image
+
+@keyframes drop{
+  0%{ transform: rotate(20deg);
+  opacity:0}
+  50%{
+    transform: rotate(-10deg);
+   }
+  100%{
+    transform: rotate(0deg);
+    opacity:1}
+}
+
+// styling my title
+.name{
+  position: absolute;
+  top:90%;
+  left:80%;
+
+}
+// styling welcome texts
+
+.welcome{
+  position: absolute;
+  top:30%;
+  text-decoration: underline;
+  font-size: 5rem;
+  font-weight: 900;
+  left:1rem;
+  text-shadow: 2px 2px #230578;
+  color: fade-in(black, $amount: 0.5);
+  animation: position linear 0.4s;
+  transition: 0.5s;
+}
+// animating welcome message
+
+@keyframes position {
+  from{top: -10%}
+  to{top:30%}
+}
+
+.blog-name{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  position: absolute;
+  top:40%;
+  left:2rem;
+  font-size: xx-large;
+  animation: postion 1s linear;
+  transition: all;
+  border-bottom: 2px solid white ;
+  padding-bottom:0.8rem;
+}
+// aniamting blogname
+
+@keyframes postion{
+  from {left:-2rem}
+  to{left:2rem}
+}
+
+// button styling
+
+.buttons{
+  position: absolute;
+  top:80%;
+  left:3rem;
+  display:flex;
+  opacity:1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  animation: opacity 2s linear;
+  transition:all;
+}
+
+// animating buttons
+@keyframes opacity{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+.button-elements{
+  width:auto;
+  font-size: larger;
+  font-weight: 500;
+  margin-left:1rem;
+  background-color: black;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: white;
+}
+.button-elements:hover{
+  cursor:pointer;
+  box-shadow: 2px 2px #4c5e7a;
+}
+
+// styling jobs section
+.jobs-container{
+  width: 80%;
+  margin: 0 auto;
+}
+.myjobs{
+
+  display:flex;
+  flex-direction: row;
+  grid-column: auto auto auto;
+  width:80%;
+  height: 15rem;
+  margin:0 auto;
+
+}
+.jobs{
+  margin: auto;
+  padding-top:7rem;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+  border-bottom-left-radius: 4rem;
+  color:white;
+  height: 80%;
+  width: 20%;
+}
+.job-title{
+  display: flex;
+  padding:auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.myjobsHeader{
+  color:lightness($color: #000000);
+  width:100%;
+  text-align: center;
+  font-weight: 900;
+  font-size: 3rem;
+  text-shadow: 2px 2px blue;
+  margin:0 auto;
+  margin-top:5rem;
+  margin-bottom: 5rem;
+  box-sizing: border-box;
+}
+
+// styling the about me section
+.about {
+  width:100%;
+  height:20rem;
+
+}
+.about-header{
+  width:90%;
+  height:3rem;
+  margin: 0 auto;
+  color:white;
+// margin-left:2rem;
+  margin-top:3rem;
+  box-sizing: border-box;
+  font-size: xx-large;
+  font-weight: 800;
+}
+// copied styles for blog post
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+// styling blog
+
+.blog{
+  display:flex;
+  flex-direction: row;
+  width:100%;
+}
+.blog-post{
+  width:20%;
+  margin:0 auto;
+}
+
+// designs styels
+
+.designRight{
+  position: absolute;
+  top:100.4%;
+  left:0%;
+  width:2rem;
+  height: 8rem;
+  background-color:  #230578;
+  border-bottom-left-radius: 20rem;
+}
+
+.designLeft{
+  position: absolute;
+  top:148%;
+  right:0%;
+  width:2rem;
+  height: 8rem;
+  background-color: #230578;
+  border-bottom-right-radius: 20rem;
+  box-sizing: border-box;
+}
+
+
+// walking animation
+
+.walking{
+  position: absolute;
+  top:60%;
+  width:6rem;
+  height: 8rem;
+  background-color: blue;
+  border-top-left-radius: 2rem;
+  border-top-right-radius:4rem ;
+  border-bottom-left-radius: 34rem;
+
+}
+
+
+// styling for mobile screen
+@media only screen and (max-width: 600px) {
+ .h-container{
+   width:100%;
+   display:flex;
+   height: 135%;
+   flex-direction: row;
+ }
+ .welcome{
+   font-size: xx-large;
+   width:100%;
+   font-weight: 900;
+   margin-top: -2rem;
+ }
+ .blog-name{
+   position: relative;
+   top:20%;
+   font-size: xx-large;
+   width:auto;
+   height:auto;
+   padding:1rem;
+   margin: 0 auto;
+
+ }
+ .buttons{
+   position: absolute;
+   top:55%;
+   left:10%;
+
+ }
+ .circle{
+   position: absolute;
+   width:auto;
+   top:100%;
+   left:calc(100%/3);
+ }
+
+ .jobs-container{
+   display:flex;
+   flex-direction: column;
+   height:auto;
+   width:100%;
+ }
+ .myjobs{
+   width:100%;
+   height: auto;
+   display: flex;
+   flex-direction: row;
+ }
+ .jobs{
+   display:flex;
+   width:auto;
+   height: 10rem;
+ }
+ .blog{
+   display:flex;
+   flex-direction: column;
+   width:100%;
+   height: auto;
+   margin:auto;
+ }
+ .blog-post{
+   width:auto;
+   height: auto;
+ }
+}
