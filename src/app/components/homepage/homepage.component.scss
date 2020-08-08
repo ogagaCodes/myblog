@@ -1,3 +1,6 @@
+* {
+  margin:0 auto;
+}
 .h-container{
   width: 100%;
   height: 80%;
@@ -83,9 +86,18 @@
 
 // styling my title
 .name{
-  position: absolute;
-  top:90%;
-  left:80%;
+  position: relative;
+  top:38%;
+ display: flex;
+ width:100%;
+ border-bottom: 3px solid blue;
+ height: auto;
+ align-self: center;
+ justify-self: center;
+ font-weight: 900;
+ font-size:xx-large;
+ box-sizing: border-box;
+ color:black;
 
 }
 // styling welcome texts
@@ -292,6 +304,12 @@
 
 // styling for mobile screen
 @media only screen and (max-width: 600px) {
+  .designRight{
+    display:none;
+  }
+  .designLeft{
+    display:none;
+  }
  .h-container{
    width:100%;
    display:flex;
@@ -337,12 +355,17 @@
    width:100%;
    height: auto;
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
  }
  .jobs{
    display:flex;
+   align-items: center;
+   justify-content: center;
    width:auto;
    height: 10rem;
+   background-color: transparent;
+   color: black;
+   border: 2px solid blue;
  }
  .blog{
    display:flex;
@@ -355,4 +378,50 @@
    width:auto;
    height: auto;
  }
+
+ .circle{
+  position: relative;
+  opacity:1;
+  top:46%;
+  left:0%;
+  width:50%;
+  height:auto;
+  box-sizing: border-box;
+}
+
+.blog-name{
+  position: relative;
+  left:0;
+  margin: 0 auto;
+  width:100%;
+  height:auto;
+  box-sizing: border-box;
+  margin:0;
+}
+
+.welcome{
+  position: relative;
+  top:10%;
+  width:80%;
+   margin:0 auto;
+   margin:0;
+   box-sizing: border-box;
+}
+
+// styling my title
+.name{
+ position: relative;
+ top:50%;
+ display:flex;
+ width:80%;
+ border-radius: 5px;
+ height: auto;
+ align-self: center;
+ justify-self: center;
+ font-weight: 900;
+ font-size:xx-large;
+ box-sizing: border-box;
+ color:black;
+}
+
 }

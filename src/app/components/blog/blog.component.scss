@@ -1,11 +1,17 @@
 mat-grid-tile {
   background: lightblue;
   color: white;
+  height: 100%;
 
 }
 .blogContainer{
   width:80%;
+  height: 80%;
   margin:0 auto;
   margin-top:1rem;
   color:white;
+}
+.ycontainer{
+  height: 100%;
+  width:100%;
 }

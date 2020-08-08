@@ -1,4 +1,4 @@
-.mobilenav{
+.mobilenav, .icon{
   display:none;
 }
 .my-container {
@@ -142,7 +142,15 @@
 // styling for mobile app
 
 @media only screen and (max-width: 600px) {
-
+   .icon{
+    display:flex;
+    margin:auto;
+  }
+  .icon:hover{
+    box-sizing: border-box;
+    outline: none;
+    box-sizing: border-box;
+  }
   .secondNav{
     display: none;
   }
@@ -173,9 +181,8 @@
     float: right;
     display: block;
   }
- }
 
-// style the mobile nav
+  // style the mobile nav
 
 .ymb{
   position:absolute;
@@ -215,3 +222,6 @@
 .hide{
   display:none;
 }
+
+ }
+

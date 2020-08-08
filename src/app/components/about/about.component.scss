@@ -1,0 +1,42 @@
+.acontainer{
+  height:100%;
+  width:80%;
+  margin:0 auto;
+  background-color: black;
+  color: white;
+}
+
+.myphoto{
+  width:100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.myimg{
+  width:15rem;
+  height:12rem;
+  border-bottom: 3px solid blue;
+}
+.name{
+  width:100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mystack{
+  width:100%;
+  margin:0 auto;
+  text-align: center;
+}
+
+$width : 100%;
+.body-contaner{
+  width: $width;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.education, .hobby, .onlineLinks{
+  width: auto;
+  margin-left: auto;
+}
