@@ -1,3 +1,12 @@
+.blogUltimateContainer{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: 90%;
+  margin: 0 auto;
+}
+
 mat-grid-tile {
   background: lightblue;
   color: white;
@@ -5,13 +14,31 @@ mat-grid-tile {
 
 }
 .blogContainer{
-  width:80%;
-  height: 80%;
+  width:auto;
+  height: auto;
   margin:0 auto;
+  margin-bottom: 0;
   margin-top:1rem;
-  color:white;
+  color:rgb(190, 40, 40);
 }
 .ycontainer{
-  height: 100%;
-  width:100%;
+  height: auto;
+  width:auto;
+  color:rgb(190, 40, 40);
 }
+.callAction{
+  width:100%;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 3px solid black;
+  margin-top: 4rem;
+}
+ .callAction span{
+   font-weight: 900;
+   font-size: x-large;
+   background-color: grey;
+   border-radius: 6px;
+   padding:auto;
+   box-sizing: border-box;
+
+ }

@@ -2,8 +2,10 @@
   height:100%;
   width:80%;
   margin:0 auto;
-  background-color: black;
-  color: white;
+  background-color:whitesmoke;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px solid black;
 }
 
 .myphoto{
@@ -20,12 +22,17 @@
   width:100%;
   margin: 0 auto;
   text-align: center;
+  font-weight: 900;
+  font-size: larger;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .mystack{
   width:100%;
   margin:0 auto;
   text-align: center;
+  font-weight: 500;
+  color:  #9e1e1e;
 }
 
 $width : 100%;
@@ -39,4 +46,10 @@ $width : 100%;
 .education, .hobby, .onlineLinks{
   width: auto;
   margin-left: auto;
+  padding: 1rem;
+}
+.contents{
+  border-left: 2px solid black;
+  border-left-style: dashed;
+  height: 100%;
 }
