@@ -23,10 +23,10 @@
 <!-- mobile menu -->
 
 <div class="mobilenav" id="myTopnav">
-  <div routerLink='/about' class="ymb1">About</div>
-      <div routerLink='/blog' class="ymb1">Blog</div>
-      <div routerLink='/jobs' class="ymb1">Jobs</div>
-      <div routerLink='/contact' class="ymb1">contact</div>
+  <div routerLink='/about' id="about" (click)="myFunction()" class="ymb1">About</div>
+      <div routerLink='/blog' id="blog" (click)="myFunction()" class="ymb1">Blog</div>
+      <div routerLink='/jobs' id="jobs" (click)="myFunction()" class="ymb1">Jobs</div>
+      <div routerLink='/contact' id="contact" (click)="myFunction()" class="ymb1">contact</div>
       <a  class="icon" (click)="myFunction()">
         <i id="icon1" class="fa fa-bars"></i>
       </a>

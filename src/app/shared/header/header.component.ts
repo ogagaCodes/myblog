@@ -24,11 +24,15 @@ export class HeaderComponent implements OnInit {
       x.style.display = "block";
       icon.className = "fas fa-times";
       attc.classList.add("hide");
+      document.getElementById("mobilenav").style.width = "100%";
+
     } else if(x.className != "mobilenav" || document.body.onclick) {
       x.style.display = "none";
       x.className = "mobilenav";
       icon.className = "fa fa-bars";
       attc.classList.remove("hide");
+      document.getElementById("mobilenav").style.width = "0%";
+
 
     }
   }
