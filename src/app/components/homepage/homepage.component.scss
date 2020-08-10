@@ -86,10 +86,11 @@
 
 // styling my title
 .name{
-  position: relative;
-  top:38%;
+  position: absolute;
+  top:88%;
+  left:50%;
  display: flex;
- width:100%;
+ width:auto;
  border-bottom: 3px solid blue;
  height: auto;
  align-self: center;
@@ -426,10 +427,11 @@
 
 // styling my title
 .name{
- position: relative;
- top:50%;
+ position: absolute;
+ top:155%;
+ left:10%;
  display:flex;
- width:80%;
+ width:auto;
  border-radius: 5px;
  height: auto;
  align-self: center;

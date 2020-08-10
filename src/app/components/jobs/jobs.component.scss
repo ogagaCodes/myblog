@@ -1,0 +1,41 @@
+.jobs-container{
+  width:100%;
+  height: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top:4rem;
+
+  }
+  .myjobs{
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .jobs{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:auto;
+    height: auto;
+    background-color: transparent;
+    color: black;
+    border:none;
+    text-shadow:3px 3px blue;
+
+  }
+ .myjobsHeader{
+   margin-bottom:0%;
+   font-size: xx-large;
+   border-top: 10px solid lightblue;
+ }
+  .job-title{
+    width:100%;
+    font-weight: 900;
+    font-size: xx-large ;
+    border-top:6px solid black;
+    border-radius: 8px;
+  }
+.job-title:hover{
+  cursor: pointer;
+}
