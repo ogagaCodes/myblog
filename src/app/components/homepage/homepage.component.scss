@@ -220,7 +220,7 @@
   font-size: 3rem;
   text-shadow: 2px 2px blue;
   margin:0 auto;
-  margin-top:5rem;
+  margin-top:7rem;
   margin-bottom: 5rem;
   box-sizing: border-box;
 }
@@ -362,10 +362,22 @@
    align-items: center;
    justify-content: center;
    width:auto;
-   height: 10rem;
+   height: auto;
    background-color: transparent;
    color: black;
-   border: 2px solid blue;
+   border:none;
+   text-shadow:3px 3px blue;
+
+ }
+.myjobsHeader{
+  margin-bottom:0%;
+}
+ .job-title{
+   width:100%;
+   font-weight: 900;
+   font-size: xx-large ;
+   background-color: blue;
+   border-radius: 8px;
  }
  .blog{
    display:flex;
