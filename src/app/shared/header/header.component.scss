@@ -107,36 +107,6 @@
 // styling the scrollbar
 
 
-// styling social media icon
-
-
-.side-bar{
-  position:fixed;
-  top: 60% ;
-  left:0.4rem;
-  display:flex;
-  flex-direction: column;
-  font-weight: 900;
-}
-
-.icon{
-  font-size: xx-large;
-  font-weight: 900;
-  margin-bottom: 1rem;
-  color: blue($color: #000000);
-  z-index: 1000;
-}
-.icon:hover{
-  transform: rotate(0deg);
-  cursor: pointer;
-  animation: rotate linear 0.2s 1;
-  transition: transform 0.8s;
-}
-@keyframes rotate {
-  0%{transform: rotate(20deg);}
-  50%{transform: rotate(-20deg);}
-  100%{transform: rotate(0deg);}
-}
 
 
 // styling for mobile app
