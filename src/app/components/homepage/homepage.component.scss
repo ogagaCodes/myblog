@@ -61,7 +61,7 @@
 .circle{
   position: absolute;
   opacity:1;
-  top:36%;
+  top:34%;
   left:55%;
   height:25rem;
   width:30%;
@@ -91,7 +91,7 @@
   left:50%;
  display: flex;
  width:auto;
- border-bottom: 3px solid blue;
+ border-bottom: 3px solid #230578;
  height: auto;
  align-self: center;
  justify-self: center;
@@ -99,7 +99,6 @@
  font-size:xx-large;
  box-sizing: border-box;
  color:black;
-
 }
 // styling welcome texts
 
@@ -114,6 +113,7 @@
   color: fade-in(black, $amount: 0.5);
   animation: position linear 0.4s;
   transition: 0.5s;
+  background-color: #230578;
 }
 // animating welcome message
 
@@ -133,6 +133,7 @@
   transition: all;
   border-bottom: 2px solid white ;
   padding-bottom:0.8rem;
+  background-color: #230578;
 }
 // aniamting blogname
 
@@ -193,29 +194,32 @@
 }
 .jobs{
   margin: auto;
-  padding-top:7rem;
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: black;
-  border-bottom-left-radius: 4rem;
-  color:white;
-  height: 80%;
+  color:black;
+  height: auto;
   width: 20%;
 }
 .job-title{
+  width:40%;
   display: flex;
   padding:auto;
   align-items: center;
   justify-content: center;
   text-align: center;
 
+color:black;
+font-size: xx-large;
+font-weight: 900;
+text-shadow: 8px 8px 8px blue;
+text-decoration: line-through;
 }
 
 .myjobsHeader{
   color:lightness($color: #000000);
-  width:100%;
+  width:50%;
   text-align: center;
   font-weight: 900;
   font-size: 3rem;
@@ -224,6 +228,7 @@
   margin-top:7rem;
   margin-bottom: 5rem;
   box-sizing: border-box;
+  background-color: #230578;
 }
 
 // styling the about me section
@@ -267,26 +272,26 @@
 
 // designs styels
 
-.designRight{
-  position: absolute;
-  top:100.4%;
-  left:0%;
-  width:2rem;
-  height: 8rem;
-  background-color:  #230578;
-  border-bottom-left-radius: 20rem;
-}
+// .designRight{
+//   position: absolute;
+//   top:100.4%;
+//   left:0%;
+//   width:2rem;
+//   height: 8rem;
+//   background-color:  #230578;
 
-.designLeft{
-  position: absolute;
-  top:148%;
-  right:0%;
-  width:2rem;
-  height: 8rem;
-  background-color: #230578;
-  border-bottom-right-radius: 20rem;
-  box-sizing: border-box;
-}
+// }
+
+// .designLeft{
+//   position: absolute;
+//   top:148%;
+//   right:0%;
+//   width:2rem;
+//   height: 8rem;
+//   background-color: #230578;
+//   border-bottom-right-radius: 20rem;
+//   box-sizing: border-box;
+// }
 
 
 // walking animation
