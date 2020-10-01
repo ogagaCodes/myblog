@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgxSpinnerModule } from "ngx-spinner";
 
 
 // angular material imports
@@ -52,9 +53,11 @@ import { CoursesComponent } from './components/courses/courses.component';
     MatInputModule,
     MatSelectModule,
     MatGridListModule,
-    MatTabsModule
+    MatTabsModule,
+    NgxSpinnerModule
 
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [
   ],
   bootstrap: [AppComponent]

@@ -3,6 +3,7 @@
   width:80%;
   margin:0 auto;
   background-color:whitesmoke;
+  box-shadow: 5px 5px 5px 5px;
   color: black;
   border-radius: 20px;
   box-shadow: 5px 5px 5px solid black;
@@ -27,13 +28,7 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.mystack{
-  width:100%;
-  margin:0 auto;
-  text-align: center;
-  font-weight: 500;
-  color:  #9e1e1e;
-}
+
 
 $width : 100%;
 .body-contaner{
@@ -44,15 +39,31 @@ $width : 100%;
   align-items: center;
   justify-content: center;
 }
-.education, .hobby, .onlineLinks{
-  width: 100%;
-  margin-left: 0 auto;
-  padding: 1rem;
-  box-sizing: border-box;
-}
+
 // .contents{
 //   width: fit-content;
 //   border-left: 2px solid black;
 //   border-left-style: dashed;
 //   height: 100%;
 // }
+.profession{
+  text-align: center;
+}
+.bio{
+
+text-align: center;
+font-weight: 600;
+font-size: x-large;
+}
+.knowMore p{
+  margin-top: 20px;
+  width:100%;
+  text-align: center;
+  font-size: larger;
+}
+
+.web{
+  text-align: center;
+  font-size: x-large;
+  margin-top: 10px;
+}

@@ -1,6 +1,7 @@
 import { Component, OnInit, ChangeDetectorRef, ChangeDetectionStrategy } from '@angular/core';
 import {FormControl, Validators, FormGroup, FormBuilder} from '@angular/forms';
 import { Router } from '@angular/router';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-contact',
@@ -13,12 +14,22 @@ export class ContactComponent implements OnInit {
   message: FormControl
   contactForm : FormGroup
 
-  constructor(private router:Router, private fb: FormBuilder){
+  constructor(private router:Router, private fb: FormBuilder, private spinner: NgxSpinnerService){
 
   }
 
 
   ngOnInit(){
+
+
+    /** spinner starts on init */
+    this.spinner.show();
+
+    setTimeout(() => {
+      /** spinner ends after 5 seconds */
+      this.spinner.hide();
+    }, 5000);
+
     this.email = new FormControl('', [Validators.required, Validators.email]);
     this.message = new FormControl('', [Validators.required, Validators.email]);
     this.contactForm = new FormGroup({

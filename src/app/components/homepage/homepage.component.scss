@@ -1,5 +1,5 @@
 * {
-  margin:0 auto;
+  margin:0;
 }
 .h-container{
   width: 100%;
@@ -9,7 +9,8 @@
   background-blend-mode: screen;
   animation:scale 5s linear infinite;
   transition:all;
-  border-bottom: 30px solid  #230578;
+  box-sizing: border-box;
+  margin-bottom:-24px;
   background: linear-gradient(#232323, #2667, #5677);
   animation: fade linear 5s infinite;
   transition: all;
@@ -30,18 +31,7 @@
 @keyframes scale{
 
 }
-// copied fro w3schools
-.triangle-right {
-  position: absolute;
-  top:15%;
-  left:62%;
-	width: 0;
-	height: 0;
-	border-top: 250px solid transparent;
-	border-right: 500px solid rgb(17, 17, 17);
-  border-bottom: 250px solid transparent;
-  box-sizing: content-box;
-}
+// copied fro w3school
 
 // styling my image
 
